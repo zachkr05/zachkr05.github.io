@@ -2,6 +2,7 @@
   "name": "my-personal-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zachkr05.github.io/your-repository-name",
   "dependencies": {
     "@react-three/drei": "^9.108.2",
     "@react-three/fiber": "^8.16.8",
@@ -18,7 +19,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.39",
     "react-app-rewired": "^2.2.1",
     "tailwindcss": "^3.4.4"
