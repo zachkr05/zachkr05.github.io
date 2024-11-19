@@ -139,6 +139,32 @@ ul {
   padding: 10px;
   text-align: left;
 }
+.hobby-card {
+  padding-bottom: 20px;
+  max-width: 250px; /* Limit the card width to make it smaller */
+  margin: auto; /* Center align the card */
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.hobby-img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Adjust height to control overall card size */
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 10px; /* Reduce padding for a more compact appearance */
+  text-align: center;
+}
+
+
 
 .small-container-right {
   flex: 30%;
