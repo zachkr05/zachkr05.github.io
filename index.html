@@ -278,16 +278,46 @@
             }
           }
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+  const app = document.getElementById("app");
+  if (app) {
+    const typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+
+    typewriter
+      .pauseFor(1000)
+      .typeString("I am a software developer and robotics researcher studying @ UVA")
+      .pauseFor(3000)
+      .deleteAll()
+      .typeString("I love tackling complex problems and creating innovative solutions.")
+      .pauseFor(3000)
+      .start();
+  }
+});
         </script>
-        <section class="background-section">
-        
-        
+      <section class="background-section">
         <div id="canvas-image-blending"></div>
-        <div class="main-content">
-          <h1>Hi, my name is Zachariah K. Risheq</h1>
-          <p id="app"></p>
+        <div style="height: 750px;">
+          <h1 style="padding-top: 230px; color: white;">Hi, my name is Zachariah K. Risheq</h1>
+          <p style="padding-top: 25px; color: white;" id="app"></p>
+        </div>
+
+        <h2 style="padding-bottom: 10px; padding-top: 10px;">Introduction</h2>
+
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 20px;">
+          <div class="big-container-left">
+            <p>
+              Hi, my name is Zachariah K. Risheq. I'm currently pursuing a B.S. in Computer Science at the University of Virginia, where I’ve had the opportunity to work on exciting projects involving robotics, machine learning, and distributed systems. Through internships, research, and coursework, I've developed skills in programming, data analysis, and software engineering.
+              <br><br>
+              I enjoy tackling complex problems and am passionate about advancing autonomous technologies to benefit society. In my free time, I like exploring new technologies, engaging with open-source projects, and working on innovative side projects.
+            </p>
+          </div>
         </div>
       </section>
+
         
 
         <!-- Introduction -->
@@ -526,11 +556,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video-overlay">
-            <span class="video-duration">
-              <i class="fa fa-clock-o me-1"></i>3:45
-            </span>
-          </div>
+          
         </div>
         <div class="video-content">
           <h3 class="video-title">Autonomous Navigation Demo</h3>
@@ -555,11 +581,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video-overlay">
-            <span class="video-duration">
-              <i class="fa fa-clock-o me-1"></i>4:20
-            </span>
-          </div>
+      
         </div>
         <div class="video-content">
           <h3 class="video-title">Trajectory Generation Using Cubic Splines</h3>
@@ -584,11 +606,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video-overlay">
-            <span class="video-duration">
-              <i class="fa fa-clock-o me-1"></i>2:15
-            </span>
-          </div>
+          
         </div>
         <div class="video-content">
           <h3 class="video-title">Robotics Replay Demo</h3>
