@@ -514,11 +514,10 @@
       </div>
     </div>
 
-    <!-- Projects Section -->
 <!-- Projects Section -->
 <h2 class="section-title text-center mt-5 mb-4">Recent Projects</h2>
 
-<!-- Whistleblower Project -->
+<!-- Whistleblower Web Application Project -->
 <div class="project-card">
   <div class="row align-items-center">
     <div class="col-lg-12">
@@ -527,7 +526,14 @@
           <h3 class="project-title">Whistleblower Web Application</h3>
           <span class="project-badge">Completed: December 2023</span>
         </div>
-        <p class="mb-3">Developed a Django-based forum application for report submissions with tailored content visibility based on user roles. Integrated an interactive interface with upvote/downvote features and real-time form management.</p>
+        <p class="mb-3">
+          Developed a Django-based forum application for report submissions with tailored content visibility based on user roles. Integrated an interactive interface with upvote/downvote features and real-time form management.
+        </p>
+        <ul class="mb-3" style="color:#000000">
+          <li>Integrated Google Login for secure authentication across multiple user roles.</li>
+          <li>Supports file uploads (.txt, .pdf, .jpg) to Amazon S3 for persistent storage.</li>
+          <li>Real-time submission management with dynamic status updates and review process.</li>
+        </ul>
         <div class="skills-used mb-3">
           <span class="skill-tag">Django</span>
           <span class="skill-tag">Python</span>
@@ -542,7 +548,43 @@
   </div>
 </div>
 
-<!-- Pandemic Simulation Project -->
+<!-- Puzzle Vault Project -->
+<div class="project-card mt-4">
+  <div class="row align-items-center">
+    <div class="col-lg-12">
+      <div class="project-content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="project-title">Puzzle Vault – Gamified Financial Analysis</h3>
+          <span class="project-badge">Honorable Mention @ UGAHacks</span>
+        </div>
+        <p class="mb-3">
+          Developed a gamified escape room web application that transforms financial PDFs into interactive quizzes using a Python Flask backend, React.js, and the OpenAI API.
+        </p>
+        <ul class="mb-3" style="color:#000000">
+          <li>Gamified financial analysis with an Escape Room theme</li>
+          <li>Upload a file to automatically generate quiz questions based on its content using the OpenAI API</li>
+          <li>Secure user authentication and leaderboard tracking using MongoDB Atlas</li>
+        </ul>
+        <div class="skills-used mb-3">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Python Flask</span>
+          <span class="skill-tag">MongoDB Atlas</span>
+          <span class="skill-tag">OpenAI API</span>
+        </div>
+        <a href="https://github.com/zachkr05/PuzzleVault" class="btn btn-outline-primary btn-sm" id="btn5">
+          <i class="fa fa-github me-2"></i>View Project
+        </a>
+        <a href="#puzzle-vault-demo" class="btn btn-outline-secondary btn-sm mt-2">
+          <i class="fa fa-play me-2"></i>Watch Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- AI Pandemic Response Simulation Project -->
 <div class="project-card mt-4">
   <div class="row align-items-center">
     <div class="col-lg-12">
@@ -567,24 +609,23 @@
           <span class="skill-tag">NetworkX</span>
           <span class="skill-tag">MATLAB</span>
         </div>
-        <a href="https://github.com/zachkr05/RL" class="btn btn-outline-primary btn-sm" id="btn4">
+        <a href="https://github.com/zachkr05/RL" class="btn btn-outline-primary btn-sm" id="btn6">
           <i class="fa fa-github me-2"></i>View Project
         </a>
-        </div>
       </div>
     </div>
   </div>
 </div>
 
 
+
 </section>
 <!-- Videos of My Work at the AMR Lab -->
 <!-- Videos of My Work at the AMR Lab -->
-<!-- Video Gallery Section -->
-<section class="video-gallery-section py-5">
+<!-- Video Gallery Section --><section class="video-gallery-section py-5">
   <div class="container">
     <div class="section-header text-center mb-5">
-      <h2 class="section-title">Research Demonstrations</h2>
+      <h2 class="section-title">Research And Project Demonstrations</h2>
       <p class="section-subtitle">Featured work from the AMR Lab</p>
     </div>
 
@@ -599,7 +640,6 @@
               allowfullscreen>
             </iframe>
           </div>
-          
         </div>
         <div class="video-content">
           <h3 class="video-title">Autonomous Navigation Demo</h3>
@@ -624,7 +664,6 @@
               allowfullscreen>
             </iframe>
           </div>
-      
         </div>
         <div class="video-content">
           <h3 class="video-title">Trajectory Generation Using Cubic Splines</h3>
@@ -649,7 +688,6 @@
               allowfullscreen>
             </iframe>
           </div>
-          
         </div>
         <div class="video-content">
           <h3 class="video-title">Robotics Replay Demo</h3>
@@ -663,9 +701,33 @@
           </p>
         </div>
       </div>
+
+      <!-- Video Card 4: Puzzle Vault Demo -->
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/slgCbs9MWLY?si=2PEUMkXJr9O_ub4N" 
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-title">Puzzle Vault Demo</h3>
+          <div class="video-tags mb-3">
+            <span class="tag">Gamification</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Interactive</span>
+          </div>
+          <p class="video-description">
+            Watch Puzzle Vault in action as it transforms financial PDFs into interactive quizzes in a gamified escape room environment.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-
+</section>
 
 </section>
 
