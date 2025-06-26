@@ -82,12 +82,6 @@
             color: inherit;
         }
         
-        .contact-icon {
-            font-size: 2.5rem;
-            color: #007bff;
-            margin-bottom: 1rem;
-        }
-        
         .contact-method {
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
@@ -360,7 +354,7 @@
                     Through my diverse experiences in internships, research, and coursework, I've developed a strong foundation in programming, data analysis, and software engineering. I'm particularly passionate about advancing autonomous technologies to benefit society.
                   </p>
                   <div class="interests-section p-4 bg-light rounded">
-                    <h5 class="mb-3">Beyond Academics</h5>
+                    <h5 style="color:#000000;" class="mb-4">Beyond Academics</h5>
                     <div class="d-flex flex-wrap gap-3">
                       <span class="badge bg-primary p-2">Open Source Development</span>
                       <span class="badge bg-primary p-2">Innovative Side Projects</span>
@@ -373,7 +367,7 @@
               <!-- Profile Image Section -->
               <div class="col-lg-4 text-center">
                 <div class="profile-image-container mt-4 mt-lg-0">
-                  <img src="Image_20250131001008.jpg" alt="Zachariah K. Risheq" class="img-fluid rounded-circle shadow" style="max-width: 300px; object-fit: cover;">
+                  <img src="Image_20250131001008.jpeg" alt="Zachariah K. Risheq" class="img-fluid rounded-circle shadow" style="max-width: 300px; object-fit: cover;">
                   <div class="mt-3">
                     <div class="education-badge p-2 bg-light rounded-pill d-inline-block">
                       <i class="fa fa-graduation-cap me-2"></i>
@@ -460,7 +454,7 @@
                   <span class="skill-tag">LiDAR</span>
                 </div>
                 <a href="https://less-lab-uva.github.io/" class="btn btn-outline-primary btn-sm" id="btn2">
-                  <i class="fa fa-external-link me-2"></i>Learn more
+                  <i class="fa fa-external-link me-2"></i>View Research
                 </a>
               </div>
             </div>
@@ -738,7 +732,7 @@
     <div class="resume-card p-4 bg-white rounded shadow-sm">
       <i class="fa fa-file-text-o resume-icon mb-3"></i>
       <p class="lead mb-4">Want to learn more about my professional experience?</p>
-      <a href="https://docs.google.com/document/d/1TP33jYA5b97RZRwYBPPqEigBnoINFvXsTNTkakkvm50/edit?usp=sharing" 
+      <a href="https://www.overleaf.com/read/hdvypgnsvcsr#a3fb5a" 
          target="_blank" 
          class="btn btn-primary btn-lg">
         <i class="fa fa-download me-2"></i>Download Resume
@@ -788,239 +782,360 @@
     </div>
   </div>
 </section>
+<div class="container text-center my-5">
+  <h2 class="mb-3">Let's Connect</h2>
+  <p class="lead text-muted mb-5">Interested in collaborating or just want to say hi? Feel free to reach out!</p>
 
-<!-- Contact Section -->
-<section class="contact-section py-5">
-  <div class="container text-center">
-    <h2 class="section-title mb-4">Let's Connect</h2>
-    <p class="lead mb-5">Interested in collaborating or just want to say hi? Feel free to reach out!</p>
-    
-    <div class="contact-cards">
-      <div class="row justify-content-center g-4">
-        <div class="col-md-4">
-          <div class="contact-card">
-            <a href="mailto:zachkr05@gmail.com" class="contact-link">
-              <i class="fa fa-envelope-o contact-icon"></i>
-              <h3 class="contact-method">Email</h3>
-              <p class="contact-detail">zachkr05@gmail.com</p>
-            </a>
+  <div class="row justify-content-center g-4">
+    <div class="col-md-5 col-lg-4">
+      <a href="mailto:zachkr05@gmail.com" class="contact-card-link">
+        <div class="contact-card h-100">
+          <div class="contact-icon-wrapper email">
+            <i class="fa fa-envelope-o contact-icon"></i>
           </div>
+          <h3 class="contact-method">Email</h3>
+          <p class="contact-detail">zachkr05@gmail.com</p>
         </div>
-        <div class="col-md-4">
-          <div class="contact-card">
-            <a href="https://github.com/zachkr05" target="_blank" class="contact-link">
-              <i class="fa fa-github contact-icon"></i>
-              <h3 class="contact-method">GitHub</h3>
-              <p class="contact-detail">View My Projects</p>
-            </a>
+      </a>
+    </div>
+
+    <div class="col-md-5 col-lg-4">
+      <a href="https://github.com/zachkr05" target="_blank" class="contact-card-link">
+        <div class="contact-card h-100">
+          <div class="contact-icon-wrapper github">
+            <i class="fa fa-github-alt contact-icon"></i>
           </div>
+          <h3 class="contact-method">GitHub</h3>
+          <p class="contact-detail">View My Projects</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
+</div>
 
   <footer class="text-center mt-5">
   </footer>
 </section>
 
 <style>
-  /* Consolidated Styles */
-  .resume-card, .hobby-card, .language-card, .contact-card, .feature-card, .experience-card, .project-card, .video-card {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-  }
-  
-  .resume-card:hover, .hobby-card:hover, .contact-card:hover, .feature-card:hover, .experience-card:hover, .project-card:hover, .video-card:hover {
-      transform: translateY(-5px);
-  }
-  
-  .hobby-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-  }
-  
-  .hobby-card:hover .hobby-img {
-      transform: scale(1.05);
-  }
-  
-  .hobby-overlay {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      color: white;
-      font-size: 0.9rem;
-  }
-  
-  .language-card {
-      padding: 2rem;
-  }
-  
-  .language-name {
-      font-size: 1.25rem;
-      margin: 0;
-  }
-  
-  .proficiency-badge {
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-  }
-  
-  .native {
-      background: #28a745;
-      color: white;
-  }
-  
-  .intermediate {
-      background: #17a2b8;
-      color: white;
-  }
-  
-  .contact-link {
-      text-decoration: none;
-      color: inherit;
-  }
-  
-  .contact-icon {
-      font-size: 2.5rem;
-      color: #007bff;
-      margin-bottom: 1rem;
-  }
-  
-  .contact-method {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-  }
-  
-  .contact-detail {
-      color: #6c757d;
-  }
-  
-  .feature-card {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-card:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .introduction-section {
-      background-color: white;
-      margin: 2rem auto;
-      max-width: 1200px;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .education-badge {
-      font-size: 0.9rem;
-      color: #666;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .profile-image-container img {
-      border: 5px solid white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-  }
-  
-  .profile-image-container img:hover {
-      transform: scale(1.02);
-  }
-  
-  .experience-section {
-      padding: 2rem 0;
-  }
-  
-  .company-badge, .project-badge {
-      background: #e9ecef;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-  }
-  
-  .company-logo {
-      max-width: 150px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-  }
-  
-  .company-logo:hover {
-      transform: scale(1.05);
-  }
-  
-  .skill-tag, .tag {
-      display: inline-block;
-      background: #f8f9fa;
-      padding: 0.3rem 0.8rem;
-      border-radius: 15px;
-      margin: 0.2rem;
-      font-size: 0.85rem;
-      color: #495057;
-      border: 1px solid #dee2e6;
-  }
-  
-  .video-gallery-section {
-      background-color: white;
-      padding: 4rem 0;
-  }
-  
-  .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 1rem;
-  }
-  
-  .video-thumbnail-container {
-      position: relative;
-  }
-  
-  .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-  }
-  
-  .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-  }
-  
-  .video-overlay {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 0.3rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-  }
-  
-  @media (max-width: 768px) {
-      .contact-card {
-          margin-bottom: 2rem;
-      }
-  
-      .video-grid {
-          grid-template-columns: 1fr;
-      }
-  }
+  /*
+ * Complete Stylesheet
+ * -------------------
+ * This file includes the original styles plus the enhanced versions
+ * for the Introduction and Contact sections.
+ *
+ * IMPORTANT: This stylesheet uses icons from Font Awesome. Make sure to
+ * include the Font Awesome CDN in your HTML <head> for icons to appear:
+ * <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ *
+ */
+
+/* --- General Card Styles --- */
+/* NOTE: .feature-card and .contact-card have been removed from this generic rule
+   to allow for their own unique, enhanced styling below. */
+.resume-card, .hobby-card, .language-card, .experience-card, .project-card, .video-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover, .hobby-card:hover, .language-card:hover, .experience-card:hover, .project-card:hover, .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Hobby Card Specific Styles --- */
+.hobby-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-img {
+    transform: scale(1.05);
+}
+
+.hobby-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+/* --- Language Card Styles --- */
+.language-card {
+    padding: 2rem;
+}
+
+.language-name {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.proficiency-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.native {
+    background: #28a745;
+    color: white;
+}
+
+.intermediate {
+    background: #17a2b8;
+    color: white;
+}
+
+
+/* ====================================================================== */
+/* ENHANCED INTRODUCTION SECTION                     */
+/* ====================================================================== */
+
+.introduction-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px; /* Added for consistency */
+    padding: 1.5rem; /* Adjusted padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.15);
+}
+
+.feature-card .fas { /* Targeting Font Awesome icons */
+    color: #007bff;
+}
+
+.feature-card h5 {
+    color: #343a40;
+    font-weight: 600;
+}
+
+.interest-badge {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.interest-badge:hover {
+    background-color: #0056b3;
+}
+
+.profile-image-container img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%; /* This should be here for the circle shape */
+    border: 7px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-badge {
+    font-size: 0.95rem;
+    color: #495057;
+    background-color: #fff; /* Ensure it stands out on the gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem; /* Added padding */
+}
+
+.education-badge i {
+    color: #007bff;
+}
+
+
+/* ====================================================================== */
+/* ENHANCED CONTACT SECTION                        */
+/* ====================================================================== */
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon-wrapper.email {
+  background-color: #007bff;
+}
+
+.contact-icon-wrapper.github {
+  background-color: #007bff;
+}
+
+.contact-method {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.25rem;
+}
+
+.contact-detail {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+
+/* --- Experience Section Styles --- */
+.experience-section {
+    padding: 2rem 0;
+}
+
+.company-badge, .project-badge {
+    background: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #fff; /* Added for better contrast */
+}
+
+.company-logo {
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+    transform: scale(1.05);
+}
+
+.skill-tag, .tag {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    margin: 0.2rem;
+    font-size: 0.85rem;
+    color: #495057;
+    border: 1px solid #dee2e6;
+}
+
+
+/* --- Video Gallery Section Styles --- */
+.video-gallery-section {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.video-thumbnail-container {
+    position: relative;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.btn-outline-primary {
+
+  color:#0d6efd;
+  border-color:transparent;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: transparent;
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .contact-card {
+        margin-bottom: 2rem;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
   </style>
   
   </body>
