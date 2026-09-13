@@ -9,12 +9,12 @@ author_profile: true
 
 <div class="news-timeline">
 {% for item in site.data.news %}
-  <article class="news-item">
+  <article class="news-item{% if item.category %} news-item--{{ item.category | downcase }}{% endif %}">
     <div class="news-item__date">{{ item.date }}</div>
     <div class="news-item__marker" aria-hidden="true"></div>
     <div class="news-item__content">
       {% if item.category %}
-      <span class="news-item__cat news-item__cat--{{ item.category | downcase }}">{{ item.category }}</span>
+      <span class="news-item__cat">{{ item.category }}</span>
       {% endif %}
       <h3 class="news-item__title">
         {% if item.link %}
@@ -34,10 +34,32 @@ author_profile: true
   margin: 1.5em 0 2em;
   --news-dot-y: 0.78rem;
 }
+
+/* One colour per category, shared by the badge and the timeline dot.
+   --cat-color is the fill, --cat-ink is the badge text on top of it. */
 .news-item {
+  --cat-color: #55595c;
+  --cat-ink: #fff;
   display: grid;
   grid-template-columns: 6.5rem 1.5rem 1fr;
 }
+.news-item--honor,
+.news-item--award       { --cat-color: #b0541c; }
+.news-item--position    { --cat-color: #3d4245; }
+.news-item--service     { --cat-color: #6b7175; }
+.news-item--publication { --cat-color: #16776a; }
+.news-item--education   { --cat-color: #3f5b8b; }
+
+/* The dark theme background is mid-grey, so the dark neutrals vanish on it.
+   Light fills with dark ink read cleanly for both the dot and the badge. */
+html[data-theme="dark"] .news-item              { --cat-color: #b9bfc4; --cat-ink: #26292b; }
+html[data-theme="dark"] .news-item--honor,
+html[data-theme="dark"] .news-item--award       { --cat-color: #e9a877; --cat-ink: #3a1a06; }
+html[data-theme="dark"] .news-item--position    { --cat-color: #ccd2d6; --cat-ink: #2b2f31; }
+html[data-theme="dark"] .news-item--service     { --cat-color: #aab1b6; --cat-ink: #24282a; }
+html[data-theme="dark"] .news-item--publication { --cat-color: #6ecfbc; --cat-ink: #0c2e28; }
+html[data-theme="dark"] .news-item--education   { --cat-color: #9db4dd; --cat-ink: #16233a; }
+
 .news-item__date {
   padding-top: 0.5rem;
   font-size: 0.72rem;
@@ -67,12 +89,13 @@ author_profile: true
   position: absolute;
   top: var(--news-dot-y);
   left: 50%;
-  width: 10px;
-  height: 10px;
-  margin-left: -5px;
-  margin-top: -5px;
+  width: 11px;
+  height: 11px;
+  margin-left: -5.5px;
+  margin-top: -5.5px;
   border-radius: 50%;
-  background: var(--global-link-color);
+  background: var(--cat-color);
+  box-shadow: 0 0 0 3px var(--global-bg-color);
 }
 /* Trim the bar so it spans first dot to last dot, with no dangling ends. */
 .news-item:first-child .news-item__marker::before {
@@ -98,15 +121,9 @@ author_profile: true
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #fff;
-  background: #55595c;
+  color: var(--cat-ink);
+  background: var(--cat-color);
 }
-.news-item__cat--honor,
-.news-item__cat--award      { background: #b0541c; }
-.news-item__cat--position   { background: #3d4245; }
-.news-item__cat--service    { background: #6b7175; }
-.news-item__cat--publication{ background: #16776a; }
-.news-item__cat--education  { background: #3f5b8b; }
 .news-item__title {
   margin: 0 0 0.3em;
   font-family: Georgia, Times, serif;
