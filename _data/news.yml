@@ -1,0 +1,56 @@
+# News items shown on /news/, newest first.
+#
+# Fields:
+#   date     : short date shown in the left rail, e.g. "Aug 2026"
+#   category : Position | Publication | Education | Service | Honor | Award
+#              (drives the badge colour; anything else falls back to grey)
+#   title    : one-line headline
+#   link     : optional; internal path (/portfolio/...) or full external URL
+#   body     : optional; one or two sentences
+
+- date: "Aug 2026"
+  category: "Position"
+  title: "Finished a summer research internship at the Air Force Research Laboratory"
+  body: "Worked with Dr. Oliver Nina on diffusion-based uncertainty in the multi-agent RL loop, coupling MAPPO with a diffusion uncertainty signal trained CTDE in an asymmetric actor-critic framework."
+
+- date: "May 2026"
+  category: "Position"
+  title: "Joined AFOSR (AFRL) as a summer research intern"
+  body: "Advised by Dr. Oliver Nina, investigating diffusion models for uncertainty-aware multi-agent reinforcement learning."
+
+- date: "May 2026"
+  category: "Publication"
+  title: "Senior thesis archived in UVA Libra"
+  link: "https://search.lib.virginia.edu/sources/uva_library/items/oid-d7u9j9np0efrfrm4ftdg"
+  body: "GuidAR: Meta-Learned MoE Diffusion Costmaps From AR Trajectory Edits, advised by Prof. Nicola Bezzo."
+
+- date: "May 2026"
+  category: "Education"
+  title: "Graduated with a BS in Computer Science from UVA"
+  body: "School of Engineering and Applied Science. Continuing at UVA for an MS in Computer Science."
+
+- date: "Feb 2026"
+  category: "Position"
+  title: "Joined the LIVE Lab at UVA"
+  body: "Advised by Prof. Yen-Ling Kuo, working on text-to-MuJoCo simulation generation and AR teleoperation for robot demonstration collection."
+
+- date: "Nov 2024"
+  category: "Service"
+  title: "Began judging the FIRST LEGO League Challenge"
+  body: "Evaluating teams of 9 to 14 year olds on project innovation, core values, and robot design at regional competitions in Charlottesville."
+
+- date: "Aug 2024"
+  category: "Position"
+  title: "Joined the AMR Lab at UVA"
+  link: "/portfolio/guidar-ar-diffusion-costmaps/"
+  body: "Advised by Prof. Nicola Bezzo. Led the team building GuidAR, an AR interface and diffusion costmap model for human-guided robot navigation."
+
+- date: "May 2024"
+  category: "Position"
+  title: "Joined the LESS Lab at UVA"
+  body: "Advised by Prof. Sebastian Elbaum, as a research assistant to Meriel Von Stein on autonomous navigation safety and field data collection."
+
+- date: "Aug 2023"
+  category: "Education"
+  title: "Started a BS in Computer Science at UVA"
+  body: "Began undergraduate study in the School of Engineering and Applied Science at the University of Virginia."

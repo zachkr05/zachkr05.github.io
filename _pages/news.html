@@ -1,0 +1,147 @@
+---
+layout: archive
+title: "News"
+permalink: /news/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="news-timeline">
+{% for item in site.data.news %}
+  <article class="news-item">
+    <div class="news-item__date">{{ item.date }}</div>
+    <div class="news-item__marker" aria-hidden="true"></div>
+    <div class="news-item__content">
+      {% if item.category %}
+      <span class="news-item__cat news-item__cat--{{ item.category | downcase }}">{{ item.category }}</span>
+      {% endif %}
+      <h3 class="news-item__title">
+        {% if item.link %}
+          <a href="{% if item.link contains '://' %}{{ item.link }}{% else %}{{ base_path }}{{ item.link }}{% endif %}">{{ item.title }}</a>
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+      </h3>
+      {% if item.body %}<p class="news-item__body">{{ item.body }}</p>{% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>
+
+<style>
+.news-timeline {
+  margin: 1.5em 0 2em;
+  --news-dot-y: 0.78rem;
+}
+.news-item {
+  display: grid;
+  grid-template-columns: 6.5rem 1.5rem 1fr;
+}
+.news-item__date {
+  padding-top: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--global-text-color-light);
+}
+
+/* Marker column: the bar runs down the middle, the dot sits on it. */
+.news-item__marker {
+  position: relative;
+}
+.news-item__marker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--global-dark-border-color);
+}
+.news-item__marker::after {
+  content: "";
+  position: absolute;
+  top: var(--news-dot-y);
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: var(--global-link-color);
+}
+/* Trim the bar so it spans first dot to last dot, with no dangling ends. */
+.news-item:first-child .news-item__marker::before {
+  top: var(--news-dot-y);
+}
+.news-item:last-child .news-item__marker::before {
+  bottom: auto;
+  height: var(--news-dot-y);
+}
+
+.news-item__content {
+  padding: 0.45rem 0 1.6rem 1.1rem;
+}
+.news-item:last-child .news-item__content {
+  padding-bottom: 0.4rem;
+}
+.news-item__cat {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #55595c;
+}
+.news-item__cat--honor,
+.news-item__cat--award      { background: #b0541c; }
+.news-item__cat--position   { background: #3d4245; }
+.news-item__cat--service    { background: #6b7175; }
+.news-item__cat--publication{ background: #16776a; }
+.news-item__cat--education  { background: #3f5b8b; }
+.news-item__title {
+  margin: 0 0 0.3em;
+  font-family: Georgia, Times, serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.news-item__title a {
+  color: inherit;
+}
+.news-item__body {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--global-fig-caption-color);
+}
+
+@media (max-width: 37.5em) {
+  .news-timeline {
+    --news-dot-y: 0.42rem;
+  }
+  .news-item {
+    grid-template-columns: 1.5rem 1fr;
+  }
+  .news-item__marker {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+  }
+  .news-item__date {
+    grid-column: 2;
+    padding: 0 0 0.25rem 1.1rem;
+  }
+  .news-item__content {
+    grid-column: 2;
+    padding-top: 0;
+  }
+}
+</style>

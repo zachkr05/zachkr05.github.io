@@ -1,152 +1,232 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Zachariah Risheq",
+    "email": "zachkr05@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://zachkr05.github.io",
+    "summary": "MS student in Computer Science at the University of Virginia and a researcher at the LIVE Lab, advised by Prof. Yen-Ling Kuo. My research interests span theory-of-mind (ToM), World Models, and vision-language-action.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Charlottesville",
       "countryCode": "US",
-      "region": ""
+      "region": "VA"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "zachkr05",
+        "url": "https://github.com/zachkr05"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "zachariah-risheq",
+        "url": "https://www.linkedin.com/in/zachariah-risheq"
+      },
+      {
+        "network": "X",
+        "username": "ZachariahRisheq",
+        "url": "https://x.com/ZachariahRisheq"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Air Force Research Laboratory (AFRL)",
+      "position": "Research Assistant (AI)",
+      "website": "",
+      "startDate": "2026-05-01",
+      "endDate": "2026-08-01",
+      "summary": "Internship. Advisor: Dr. Oliver Nina.",
+      "highlights": [
+        "Authored the research proposal on multi-agent reinforcement learning and diffusion models, investigating diffusion models for uncertainty-aware MARL.",
+        "Proposed and built a novel decentralized cooperative MARL system coupling MAPPO with a diffusion-based uncertainty signal, trained CTDE in an asymmetric actor-critic framework.",
+        "Built a low-dimensional test environment for the collaborative framework.",
+        "Improved value estimation by +5% and successful episodes per run by +8% over a baseline PPO policy."
+      ]
+    },
+    {
+      "company": "University of Virginia - LIVE Lab",
+      "position": "Research Assistant (AI)",
+      "website": "",
+      "startDate": "2026-02-01",
+      "endDate": "",
+      "summary": "Part-time. Charlottesville, VA. Advisor: Prof. Yen-Ling Kuo.",
+      "highlights": [
+        "Built an end-to-end text-to-MuJoCo simulation generation pipeline, synthesizing and reconstructing 3D assets from natural-language scene specifications and automatically generating executable simulation environments.",
+        "Proposed and implemented a novel Markov-Chain-Monte-Carlo simulation generation process using a value function for the MDP.",
+        "Built a 100 Hz AR teleoperation system on Meta Quest 3, streaming bimanual controller poses to a mobile manipulator over low-latency sockets for scalable robot-demonstration collection.",
+        "Collected 100+ demonstrations, 15 hours, and 1000+ trajectories.",
+        "Evaluated generated scenes across 100 prompts spanning 25 object classes, achieving 92% executable-scene success and reducing manual environment construction from 30 min to 4 min.",
+        "Built a cross-format scene-conversion pipeline exporting model directives to MuJoCo and Unity, plus a post-hoc critic-driven evaluation stage over frozen 3D scenes."
+      ]
+    },
+    {
+      "company": "University of Virginia - AMR Lab",
+      "position": "Research Assistant (AI)",
+      "website": "",
+      "startDate": "2024-08-01",
+      "endDate": "2026-06-01",
+      "summary": "Internship. Charlottesville, VA. Advisor: Prof. Nicola Bezzo.",
+      "highlights": [
+        "Led a cross-functional team developing an interactive AR interface in Unity for real-time UAV/UGV trajectory visualization and mission-plan editing.",
+        "Developed an LLM/VLM command-grounding service mapping ambiguous natural-language instructions into structured robot trajectory edits and goal specifications.",
+        "Evaluated command grounding on 100 instructions, achieving 97.3% execution accuracy and reducing invalid plans by 99%.",
+        "Developed a conditional diffusion model for robot costmap and trajectory generation, using value-function-derived supervision from human trajectory edits to adapt future plans.",
+        "Built a real-time TCP communication server with 100 Hz communication and length-prefixed framing, integrating a diffusion-model backend, Unity AR client, Vicon motion capture, and a ROSbot UGV into one closed-loop pipeline."
+      ]
+    },
+    {
+      "company": "University of Virginia - LESS Lab",
+      "position": "Research Assistant (AI)",
+      "website": "",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "Full-time. Charlottesville, VA. Advisor: Prof. Sebastian Elbaum; research assistant to Meriel Von Stein.",
+      "highlights": [
+        "Mentored a cohort of two undergraduates in outdoor autonomous-navigation and data-collection workflows, guiding them to execute 3 km of collision-free field runs and contribute 1000+ labeled frames to the dataset.",
+        "Authored a Python data-augmentation toolkit that grew the LiDAR and image corpus 10x and lifted detection recall by 12%.",
+        "Reduced preprocessing time by 60% using optimized NumPy/Pandas scripts.",
+        "Implemented PyTorch models integrated with ROS 2, improving robot perception by 30%.",
+        "Code: https://github.com/zachkr05/ROSbot_data_collection - ROS workspace for collecting human navigation data of a Husarion ROSbot 2.0."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "University of Virginia",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2026-08-01",
+      "endDate": "2028-05-01",
+      "gpa": "4.00/4.00",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "University of Virginia, School of Engineering",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "2022-08-01",
+      "endDate": "2026-05-01",
+      "gpa": "3.72/4.00 (major)",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "C++17/20",
+        "Python",
+        "Java",
+        "C#",
+        "JavaScript",
+        "SQL",
+        "Bash",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Robotics & ML",
+      "level": "",
+      "keywords": [
+        "ROS 2",
+        "ROS 1",
+        "PyTorch",
+        "MuJoCo",
+        "Drake",
+        "NumPy",
+        "OpenCV",
+        "Eigen",
+        "scikit-learn",
+        "Navigation2",
+        "Unity"
+      ]
+    },
+    {
+      "name": "Web & data",
+      "level": "",
+      "keywords": [
+        "Flask",
+        "Django",
+        "React",
+        "Tailwind",
+        "MongoDB Atlas"
+      ]
+    },
+    {
+      "name": "Tools & systems",
+      "level": "",
+      "keywords": [
+        "Linux/Unix",
+        "Multithreading",
+        "STL",
+        "Boost (Asio/Beast)",
+        "JSON/XML",
+        "Docker",
+        "OpenAI API",
+        "Gemini API"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Theory-of-mind (ToM)",
+      "keywords": []
+    },
+    {
+      "name": "Vision-language-action",
+      "keywords": []
+    },
+    {
+      "name": "Socially intractable robots",
+      "keywords": []
+    },
+    {
+      "name": "Machine learning",
+      "keywords": []
+    },
+    {
+      "name": "Reinforcement learning",
+      "keywords": []
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "GuidAR: Meta-Learned MoE Diffusion Costmaps From AR Trajectory Edits",
+      "publisher": "Undergraduate Senior Thesis, University of Virginia (UVA Libra)",
+      "releaseDate": "2026-05-01",
+      "website": "",
+      "summary": "Z. Risheq, N. Bezzo, E. Travis. Learns diffusion costmaps from human trajectory edits made in augmented reality, so a single correction generalizes to the robot's future plans."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
+      "name": "GuidAR: Diffusion Costmaps From Human AR Trajectory Edits",
       "category": "portfolio",
-      "date": "",
+      "date": "2026-05-01",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "A mixture-of-experts conditional diffusion model that learns robot costmaps from trajectory edits a person makes in augmented reality."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "FIRST LEGO League Challenge",
+      "position": "Judge",
+      "website": "",
+      "startDate": "2024-11-01",
+      "endDate": "2026-07-01",
+      "summary": "Part-time. Charlottesville, VA.",
+      "highlights": [
+        "Evaluated student teams (ages 9-14) on project innovation, core values, and robot design at regional FLL competitions.",
+        "Facilitated structured interviews and provided constructive feedback to encourage STEM learning and teamwork.",
+        "Collaborated with a panel of judges to deliberate and award recognitions based on FIRST's judging rubrics and values."
+      ]
     }
   ]
 }
