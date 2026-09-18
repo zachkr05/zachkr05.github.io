@@ -1,0 +1,50 @@
+/* ==========================================================================
+   CONCERT VIDEO GALLERY
+   ========================================================================== */
+
+.concert-video-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.page__content .concert-video {
+  display: block;
+  margin: 0;
+  padding: 0.55rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+  background: var(--global-footer-bg-color);
+  box-shadow: 0 8px 24px rgba(25, 35, 45, 0.08);
+
+  &--featured {
+    @include breakpoint($small) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    max-height: 72vh;
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+    background: #000;
+    object-fit: contain;
+  }
+
+  figcaption {
+    margin: 0;
+    padding: 0.65rem 0.2rem 0.15rem;
+    color: var(--global-text-color);
+    font-family: $sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+}
