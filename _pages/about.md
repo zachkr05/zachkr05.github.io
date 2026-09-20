@@ -7,6 +7,10 @@ redirect_from:
   - /about.html
 ---
 
+> ***If your freedom doesn't free someone else, it's just another cage***
+>
+> — Pattie Gonia
+
 Hello! I'm Zachariah Risheq, a Masters of Science in Computer Science student and a researcher at the LIVE Lab where I am blessed to be advised by Prof. Yen-Ling Kuo. My research interests span theory-of-mind (ToM), World Models, and vision-language-action. Prior to joining the LIVE Lab, I was fortunate enough to be advised by Nicola Bezzo and Sebastian Elbaum. With Prof. Bezzo, I researched on mixed-reality as a bi-directional interface for communication between robots and humans, diffusion models, meta-learning, and theory-of-mind. Under Prof. Elbaum, I was a research assistant to Meriel Von Stein for autonomous navigation safety. I also worked at the Air Force Research Laboratory (AFRL) with Dr. Oliver Niina on centralized training with decentralized execution (CTDE) for multi-agent reinforcement learning.
 
 Currently
