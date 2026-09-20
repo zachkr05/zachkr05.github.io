@@ -19,7 +19,7 @@ Currently
 Outside the lab
 ======
 
-I lift, skateboard, and snowboard. I go to a lot of concerts and collect vinyl, mostly punk and alt. When I am reading it is usually history, economic philosophy, or geopolitics.
+I lift, skateboard, and snowboard. I go to a lot of concerts and collect vinyl, mostly punk and alt. When I am reading it is usually history, philosophy, or geopolitics.
 
 Get in touch
 ======
